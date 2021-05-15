@@ -6,7 +6,7 @@
 
 运行如下代码块，可以运行src/index的代码
 
-```
+```javascript
 yarn && yarn build
 ```
 
@@ -75,7 +75,7 @@ console.log("");
 
 点对点替换，就是根据该渐变色的位置替换
 
-```
+```javascript
 import GradientAnimation from "../assets/Gradient.json";
 import {
   parseGradientFill,
@@ -170,7 +170,7 @@ console.log(JSON.stringify(newJson));
 
 按色值替换渐变色
 
-```
+```javascript
 /*
   替换渐变色-色值替换，就是根据该渐变色的位置替换
 */
@@ -226,7 +226,7 @@ console.log(JSON.stringify(newGradientJson));
 
 获取json中所有的纯色
 
-```
+```javascript
 import GradientAnimation from "../assets/Gradient.json";
 import { parseColor, replaceColors } from "./GetLottieColor";
 const fillColor = parseColor(GradientAnimation);
@@ -237,7 +237,7 @@ console.log(fillColor);
 
 替换json中的纯色
 
-```
+```javascript
 import { replaceColor } from "./ParseColorByColor";
 import { generateId } from "./GenerateId";
 import GradientAnimation from "../assets/Gradient.json";
@@ -269,7 +269,7 @@ console.log(JSON.stringify(newFillJson1));
 
 给填充颜色、描边颜色以及渐变色添加ln属性，这样在点击Dom元素的时候，可以获取dom元素的id，id就是ln属性。这样就可以把动画和颜色关联起来
 
-```
+```javascript
 import GradientAnimation from "../assets/Gradient.json";
 import { generateId } from "./GenerateId";
 const newJsonWithId = generateId(GradientAnimation);
