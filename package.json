@@ -1,7 +1,7 @@
 {
-  "name": "lottie-lint",
-  "version": "1.1.6",
-  "description": "lottie json lint",
+  "name": "lottie-color",
+  "version": "1.0.0",
+  "description": "lottie json color get and replece",
   "main": "lib/index.js",
   "scripts": {
     "build": "rm -fr ./lib && babel src -d lib && node lib/index.js"
@@ -9,11 +9,11 @@
   "keywords": [
     "lottie-color",
     "gradient-color",
-    "getLottieColor"
+    "getLottieColor",
+    "lottie-editor"
   ],
   "files": [
-    "lib",
-    "index.d.ts"
+    "lib"
   ],
   "babel": {
     "presets": [
